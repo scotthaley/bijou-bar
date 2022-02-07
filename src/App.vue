@@ -4,7 +4,9 @@
     <div class="section" v-for="section in sections" :key="section">
       <h2>{{ section }}</h2>
       <div class="drink" v-for="drink in drinks(section)" :key="drink.name">
-        <img :src="drink.image"/>
+        <div>
+          <img :src="drink.image"/>
+        </div>
         <div class="right">
           <div class="name">
             {{drink.name}}
