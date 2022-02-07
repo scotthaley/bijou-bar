@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     drinks: function(section) {
-      return this.menu.filter(m => m.section === section)
+      return this.menu.filter(m => m.section === section && !m.hidden)
     }
   },
 
